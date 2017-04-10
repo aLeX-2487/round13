@@ -1,0 +1,145 @@
+html{width:100%;font-size: 62.5% ;}
+body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif; }
+@media   (max-width: 420px) {
+    html{font-size: 45%}
+    .main-back img{width:262px!important;height:154px!important;}
+    .main{padding:0  calc(~"(100% - 262px)/2")!important;width:262px!important; }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: calc(~"100% - 60px")!important;
+    height: 80px;
+    padding: 0 30px!important;
+    .head-1 {
+        width: 51px;
+        float: left;
+        a {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        img {
+            width: 51px;
+            height: 42px;
+            text-align: center;
+        }
+    }
+    .head-2 {
+        width:calc(~"100% - 104px");
+        float: left;
+        font-size: 3rem;
+        line-height: 80px;
+        text-align: center;
+        color: white;
+    }
+    .head-3 {
+        width: 40px;
+        img {
+            width: 40px;
+            height: 44px;
+            vertical-align: middle;
+        }
+    }
+}
+.main{
+    width: 349px;
+    height: 20rem;
+    margin-top: 80px;
+    padding:0 calc(~"(100% - 349px)/2");
+    background: #29bde0;
+    &-back{
+        display: table-cell;
+        vertical-align:middle;
+        text-align:center;
+        width: 100%;
+        height: 20rem;
+        img{
+            width:349px ;
+            height: 205px;
+            text-align:center;
+        }
+    }
+}
+p{
+    padding-bottom: 2rem!important;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #ffc865;
+}
+.back-blue{
+    width: 80%;
+    padding: 0 10%;
+    p{
+        color: white;
+        font-size: 2rem;
+        line-height: 1.2rem;
+        padding: 0;
+    }
+}
+.main-3{
+    width:80% ;
+    padding: 0 10%;
+    border-bottom: 1px solid gainsboro;
+    background: white;
+        h3 {
+            float: left;
+            font-size: 2rem;
+            color: black;
+            line-height: 3rem;
+        }
+        h4 {
+            float: right;
+            padding-top: 1.5rem;
+            font-size: 1.5rem;
+            color: gainsboro;
+        }
+        h5 {
+            float: left;
+            width: 100%;
+            padding: 1rem 0;
+            font-size: 1.8rem;
+            color: #a6a6a6;
+            line-height: 2.2rem;
+        }
+    h3,h4,h5{font-weight: normal}
+    }
+.main-3:after{
+    content: "";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+}
+.main-3+.main-3+.main-3{
+    margin-bottom: 15rem;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12rem;
+    padding: 0;
+    background-color:rgba(41,189,224,0.5);
+    a{
+        position: absolute;
+        left:0;
+        bottom: 0;
+        float: left;
+        width: calc(~"50% - 2rem - 3%");
+        margin:2rem 3% 2rem 30px;
+        font-size: 3rem;
+        line-height: 8rem;
+        text-align: center;
+        color: white;
+        background-color:rgba(255,255,255,1);
+        border-radius: 10px;
+        background: red;
+    }
+    a+a{
+        left:50%;
+        margin:2rem 30px 2rem 3%;
+        background: orange;
+    }
+}
